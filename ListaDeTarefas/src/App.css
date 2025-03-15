@@ -1,0 +1,70 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  background-image: url('./img/gato-fundo.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.app {
+  color: #fff;
+  border: 1px solid white;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  max-width: 600px;
+  margin: 0 auto 300px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+p{
+  margin: 10px 0;
+}
+
+input{
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333974;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3;
+}
+
+button:hover{
+  opacity: 1;
+}
+
+.lista-tarefas {
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.completar{
+  background-color: #83eb63;
+}
+
+.excluir{
+  background-color: #e23124;
+}
