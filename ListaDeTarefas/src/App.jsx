@@ -24,18 +24,29 @@ export default function App() {
       categoria: "Estudo",
       completo: false,
     },
-
   ])
+
+  const addLista = (text, categoria) => {
+    const novaLista = [...lista, {
+      id: Math.floor(Math.random() * 10000),
+      text,
+      categoria,
+      completo: false,
+    },
+    ];
+    setLista(novaLista)
+  };
+
   return (
     <>
       <div className='app'>
         <h1>lista de tarefas</h1>
         <div className='lista-tarefas'>
           {lista.map((lista) => (
-            <Lista lista = {lista}/>
+            <Lista key={lista.id} lista={lista} />
           ))}
         </div>
-        <ListaForm />
+        <ListaForm addLista={addLista} />
       </div>
     </>
   )
