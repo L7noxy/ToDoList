@@ -2,31 +2,36 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   padding: 30px;
-  background-image: url('./img/gato-fundo.png');
+  background-image: url('./img/img.jpg');
   background-position: center;
   background-size: cover;
-  backdrop-filter: blur(3px);
 }
 
 .app {
+  backdrop-filter: blur(7px);
+  background-color: transparent;
   color: #cecece;
   max-width: 600px;
-  background-color: #9e7eda;
   margin: 0 auto 300px;
   padding: 20px 30px;
   border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  box-shadow: 0 0 10px rgb(197, 196, 196);
 }
 
 h1 {
   text-align: center;
+  color: #fff;
 }
 
 h2 {
   margin-bottom: 10px;
+  color: #fff;
 }
 
 p {
   margin: 10px 0;
+  color: #000;
 }
 
 input {
@@ -34,7 +39,8 @@ input {
 }
 
 button {
-  background-color: #333974;
+  margin-right: 10px;
+  background-color: #2cd032;
   color: #fff;
   padding: 5px 10px;
   border: none;
@@ -63,8 +69,40 @@ select {
 
 .completar {
   background-color: #83eb63;
+  color: #000;
 }
 
 .excluir {
   background-color: #e23124;
+}
+
+.separador{
+  padding-bottom: 0px;
+  border: 1px solid #ffffff;
+}
+
+.Lista{
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.filter-option{
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.filter-option div{
+  flex: 1 1 0;
+}
+
+p{
+  color: #fff;
 }

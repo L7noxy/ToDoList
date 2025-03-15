@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Lista({ lista }) {
+function Lista({ lista, removerLista, completarTarefa }) {
   return (
-    <div className='Lista'>
+    <div className='Lista' style={{textDecoration: lista.completo ? "line-through" : ""}}>
       <div className='content'>
         <p>{lista.text}</p>
         <p className='categoria'>
@@ -11,8 +11,8 @@ function Lista({ lista }) {
       </div>
 
       <div>
-        <button className='completar'>completar</button>
-        <button className='excluir'>x</button>
+        <button className='completar' onClick={() => completarTarefa(lista.id)}>completar</button>
+        <button className='excluir' onClick={() => removerLista(lista.id)}>x</button>
       </div>
     </div>
   )

@@ -11,7 +11,6 @@ function ListaForm({addLista}) {
         addLista(value, categoria);
         setValue("");
         setCategoria("");
-
     }
     return (
         <div className='container-form'>
